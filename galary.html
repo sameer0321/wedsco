@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
@@ -25,6 +26,33 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 3rem;
+            color: #a08452;
+            /* Gold tone */
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-container {
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -183,18 +211,14 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="about.html">
-                                            about us
+                                        <a href="galary.html">
+                                            Galary
                                         </a>
                                     </li>
-                                    <li class="has-dropdown">
+                                    <li>
                                         <a href="service.html">
                                             services
                                         </a>
-                                        <ul class="submenu">
-                                            <li><a href="service.html">service</a></li>
-                                            <li><a href="service-details.html">service details</a></li>
-                                        </ul>
                                     </li>
                                     <li><a href="contact.html">contact</a></li>
                                 </ul>
@@ -216,26 +240,11 @@
         </div>
     </header>
     <!-- Header Area End -->
-    <!-- Search Area Start -->
-    <div class="search-wrap">
-        <div class="search-inner">
-            <i class="fas fa-times search-close" id="search-close"></i>
-            <div class="search-cell">
-                <form method="get">
-                    <div class="search-field-holder">
-                        <input type="search" class="main-search-input" placeholder="Search...">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
-
-    <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/hero/breadcrumb-bg.jpg');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/gallary-images/img-7.jpg');">
         <div class="container">
             <div class="page-heading text-center">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">About us</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Galary</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="index.html">
@@ -246,412 +255,41 @@
                         <i class="fa-regular fa-slash-forward"></i>
                     </li>
                     <li>
-                        about us
+                        Galary
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!--<< Breadcrumb Section End >>-->
 
-
-    <!-- Photographer Section Start -->
-    <section class="Photographer-section section-bg-2 fix">
-        <div class="container">
-            <div class="row g-5 d-flex align-items-center">
-                <div class="col-xl-5 wow fadeInLeft" data-wow-delay=".3s">
-                    <div class="Photographer-wrapper">
-                        <div class="section-title">
-                            <span class="wow fadeInUp mt-3" data-wow-delay=".1s">WELCOME TO MY PHOTO STUDIO</span>
-                            <h3 class="wow fadeInUp mt-3" data-wow-delay=".2s">Hello,</h3>
-                            <h2 class="wow fadeInUp mt-3" data-wow-delay=".3s">My Name Is Selene &<br>I’m A Photographer
-                            </h2>
-                            <div class="love-icon wow fadeInUp mt-3" data-wow-delay=".3s">
-                                <button class="icon-prev"><i class="fa-solid fa-heart"></i></button>
-                                <button class="icon-next"><i class="fa-solid fa-heart"></i></button>
-                            </div>
-                        </div>
-                        <p class="wow fadeInUp mt-3" data-wow-delay=".5s">It is a long established fact that a reader
-                            will be distracted by the
-                            readable content of a page when looking at its layout. The point
-                            of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution of letters, as opposed to using 'Content here</p>
-                        <div class="photo-button">
-                            <a href="about.html" data-animation="fadeInUp" data-delay="1.7s" class="theme-btn">
-                                More About Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-7 wow fadeInRight" data-wow-delay=".5s">
-                    <div class="Photographer-img style">
-                        <img src="assets/img/Photographer/photographer-02.jpg" alt="img">
-                    </div>
-                </div>
+    <div class="container gallery-container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-1.jpeg" class="gallery-img" alt="Gallery Image 1">
             </div>
-        </div>
-    </section>
-    <!-- Photographer Section End -->
-
-
-    <!-- Photographer_history Section Start -->
-    <section class="Photographer_history-section fix section-padding pb-0">
-        <div class="Photographer-history-info section-bg-2">
-            <div class="container">
-                <div class="row g-5 d-flex align-items-between">
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="Photographer-img">
-                            <img src="assets/img/Photographer/photographer.jpg" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="Photographer_history">
-                            <div class="section-title">
-                                <span class="wow fadeInUp mt-3" data-wow-delay=".1s">WHO WE ARE</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=".3s">Our history</h2>
-                                <div class="love-icon wow fadeInUp mt-3" data-wow-delay=".3s">
-                                    <button class="icon-prev"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="icon-next"><i class="fa-solid fa-heart"></i></button>
-                                </div>
-                                <p class="wow fadeInUp mt-3" data-wow-delay=".5s">It is a long established fact that a
-                                    reader will be distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum
-                                    s that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English.</p>
-                                <p class="wow fadeInUp mt-3" data-wow-delay=".5s">It is a long established fact that a
-                                    reader will be distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum
-                                    that it has a more-or-less normal distribution
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-2.jpeg" class="gallery-img" alt="Gallery Image 2">
             </div>
-        </div>
-    </section>
-    <!-- Photographer_history Section End -->
-
-
-    <!-- wedding_design Section Start -->
-    <section class="cta-wedding-section fix section-padding">
-        <div class="container">
-            <div class="section-title-area">
-                <div class="section-title">
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        We help to create your plan & design<br>
-                        wedding that capture the Imagination
-                    </h2>
-                </div>
-                <div class="array-button">
-                    <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
-                    <button class="array-next"><i class="fal fa-arrow-right"></i></button>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-3.jpeg" class="gallery-img" alt="Gallery Image 3">
             </div>
-        </div>
-        <div class="swiper wedding-design">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="wedding-design-items">
-                        <div class="design-image">
-                            <img src="assets/img/wedding-design/01.jpg" alt="news-img">
-                            <div class="video-box text-center">
-                                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                    class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wedding-design-items">
-                        <div class="design-image">
-                            <img src="assets/img/wedding-design/02.jpg" alt="news-img">
-                            <div class="video-box text-center">
-                                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                    class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wedding-design-items">
-                        <div class="design-image">
-                            <img src="assets/img/wedding-design/03.jpg" alt="news-img">
-                            <div class="video-box text-center">
-                                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                    class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wedding-design-items">
-                        <div class="design-image">
-                            <img src="assets/img/wedding-design/01.jpg" alt="news-img">
-                            <div class="video-box text-center">
-                                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                    class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wedding-design-items">
-                        <div class="design-image">
-                            <img src="assets/img/wedding-design/02.jpg" alt="news-img">
-                            <div class="video-box text-center">
-                                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                    class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wedding-design-items">
-                        <div class="design-image">
-                            <img src="assets/img/wedding-design/03.jpg" alt="news-img">
-                            <div class="video-box text-center">
-                                <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                    class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-4.jpg" class="gallery-img" alt="Gallery Image 4">
             </div>
-        </div>
-    </section>
-    <!-- wedding_design Section End -->
-
-    <!-- Testimonils Section Start -->
-    <section class="testimonils-section fix section-padding pb-0">
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp" data-wow-delay=".2s">CLIENT”S TESTIMONIALS</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">what Client Say about our work</h2>
-                <div class="love-icon wow fadeInUp" data-wow-delay=".5s">
-                    <button class="icon-prev"><i class="fa-solid fa-heart"></i></button>
-                    <button class="icon-next"><i class="fa-solid fa-heart"></i></button>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-5.jpg" class="gallery-img" alt="Gallery Image 5">
             </div>
-        </div>
-        <div class="testimonils-wrapper fix bg-cover" style="background-image: url('assets/img/testimonils/bg.jpg');">
-            <div class="testimonils-items">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-10 col-lg-10 col-md-10">
-                            <div class="testimonils-wrapper">
-                                <div class="row g-4">
-                                    <div class="col-xl-6 col-lg-6 col-md-11">
-                                        <div class="testimonial-image-items">
-                                            <div class="swiper testimonial-image-slider">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <div class="testimonial-image bg-cover"
-                                                            style="background-image: url('assets/img/testimonils/02.jpg');">
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="testimonial-image bg-cover"
-                                                            style="background-image: url('assets/img/testimonils/03.jpg');">
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="testimonial-image bg-cover"
-                                                            style="background-image: url('assets/img/testimonils/05.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-11">
-                                        <div class="swiper testimonial-content-slider">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="testimonial-content">
-                                                        <div class="icon">
-                                                            <i class="fa-regular fa-quote-left"></i>
-                                                        </div>
-                                                        <p>
-                                                            There are many variations of passages of Lorem Ipsu
-                                                            available, but the majority have suffered alteration in some
-                                                            form, by injected humour, or randomised word which don't
-                                                            look even slightly believable. 
-                                                        </p>
-                                                        <div class="client-info">
-                                                            <h5>Sara &Piter</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="testimonial-content">
-                                                        <div class="icon">
-                                                            <i class="fa-regular fa-quote-left"></i>
-                                                        </div>
-                                                        <p>
-                                                            There are many variations of passages of Lorem Ipsu
-                                                            available, but the majority have suffered alteration in some
-                                                            form, by injected humour, or randomised word which don't
-                                                            look even slightly believable. 
-                                                        </p>
-                                                        <div class="client-info">
-                                                            <h5>Sara &Piter</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="testimonial-content">
-                                                        <div class="icon">
-                                                            <i class="fa-regular fa-quote-left"></i>
-                                                        </div>
-                                                        <p>
-                                                            There are many variations of passages of Lorem Ipsu
-                                                            available, but the majority have suffered alteration in some
-                                                            form, by injected humour, or randomised word which don't
-                                                            look even slightly believable. 
-                                                        </p>
-                                                        <div class="client-info">
-                                                            <h5>Sara &Piter</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="array-button justify-content-end">
-                                                <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
-                                                <button class="array-next"><i class="fal fa-arrow-right"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-6.jpg" class="gallery-img" alt="Gallery Image 6">
             </div>
-        </div>
-    </section>
-    <!-- Testimonils Section End -->
-
-    <!-- Wedding Agency Start-->
-    <div class="wedding-agency-section fix section-padding pb-0">
-        <div class="instagram-wrapper">
-            <div class="swiper instagram-banner-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/01.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/02.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/03.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/04.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/05.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/02.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-7.jpg" class="gallery-img" alt="Gallery Image 7">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <img src="assets/img/gallary-images/img-8.jpg" class="gallery-img" alt="Gallery Image 8">
             </div>
         </div>
     </div>
-    <!-- Wedding Agency End -->
-
-    <!-- Brand Section Start -->
-    <div class="brand-section fix section-padding">
-        <div class="container">
-            <div class="brand-wrapper">
-                <div class="swiper brand-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-img">
-                                <img src="assets/img/brand/01.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img">
-                                <img src="assets/img/brand/02.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img">
-                                <img src="assets/img/brand/03.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img">
-                                <img src="assets/img/brand/04.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img">
-                                <img src="assets/img/brand/05.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Brand Section End -->
 
     <!-- Footer Section Start -->
     <footer class="footer-section bg-footer">
@@ -671,7 +309,7 @@
                     <div class="content">
                         <p>Call Us 7/24</p>
                         <h3>
-                            <a href="tel:+2085550112">+208-555-0112</a>
+                            <a href="#">801-831-3371</a>
                         </h3>
                     </div>
                 </div>
@@ -692,7 +330,7 @@
                     <div class="content">
                         <p>Make a Quote</p>
                         <h3>
-                            <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            <a href="mailto:example@gmail.com">ShergillLegacyHall@gmail.com</a>
                         </h3>
                     </div>
                 </div>
@@ -714,11 +352,11 @@
                     <div class="content">
                         <p>Opening Hour</p>
                         <h3>
-                            Sunday - Fri: 9 aM - 6 pM
+                            Sun-Sat: 9:00am - 10:00pm
                         </h3>
                     </div>
                 </div>
-                <div class="contact-info-items wow fadeInUp" data-wow-delay=".8s">
+                <!-- <div class="contact-info-items wow fadeInUp" data-wow-delay=".8s">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -732,10 +370,11 @@
                     <div class="content">
                         <p>Location</p>
                         <h3>
-                            4517 Washington ave.
+                            13751 Wadsworth Park Dr Suite 101,
+                            Draper, UT 84020
                         </h3>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="footer-widgets-wrapper">
@@ -745,7 +384,7 @@
                         <div class="single-footer-widget">
                             <div class="widget-head">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                                    <img src="assets/img/logo/logo.png" alt="logo-img">
                                 </a>
                             </div>
                             <div class="footer-content">
@@ -769,31 +408,31 @@
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="about.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         about us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Testimonial
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         New & Blog
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Investor
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Contact Us
                                     </a>
@@ -808,25 +447,25 @@
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Wedding
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Engagement
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Bachelor party
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Wedding party
                                     </a>
@@ -850,32 +489,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                    <p class="wow fadeInLeft" data-wow-delay=".3s">
-                        © All Copyright 2024 by <a href="index.html">Wedsco</a>
-                    </p>
-                    <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                        <li>
-                            <a href="contact.html">
-                                Terms & Condition
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

@@ -6166,13 +6166,14 @@ input.main-search-input::placeholder {
   padding: 60px 30px;
   border: 1px solid var(--border);
   border-radius: 10px;
+  height: 100%;
 }
 
 .service-section-4 .service-wrapper .icon {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background-color: var(--theme3);
+  background-color: var(--theme);
   border-radius: 36px;
   border: 1px solid var(--white);
   text-align: center;
@@ -8057,4 +8058,14 @@ input.main-search-input::placeholder {
 .service-contant .icon i {
   color: var(--theme);
   font-size: 24px;
+}
+
+@media (max-width:992px) {
+  .section-padding {
+    padding: 50px 0 !important;
+  }
+
+  .contact-info-area .contact-info-items .content h3 {
+    font-size: unset !important;
+  }
 }
