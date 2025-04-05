@@ -2050,7 +2050,7 @@ span {
   border-radius: 0;
   box-shadow: none;
   background-color: var(--white);
-  padding: 25px 30px 0;
+  padding: 15px 30px 0;
   text-transform: capitalize;
   font-size: 18px;
   border: none;
@@ -2066,30 +2066,17 @@ span {
 
 .faq-section .faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button.collapsed {
   background-color: transparent;
-  padding: 25px 30px;
+  padding: 15px 30px;
   color: var(--header);
 }
 
 .faq-section .faq-wrapper .faq-content .accordion-item .accordion-collapse .accordion-body {
-  padding-right: 130px;
   padding-left: 30px;
   padding-top: 15px;
   color: var(--header1);
   background-color: var(--white);
   padding-bottom: 25px;
   font-size: 13px;
-}
-
-@media (max-width: 1399px) {
-  .faq-section .faq-wrapper .faq-content .accordion-item .accordion-collapse .accordion-body {
-    padding-right: 50px;
-  }
-}
-
-@media (max-width: 991px) {
-  .faq-section .faq-wrapper .faq-content .accordion-item .accordion-collapse .accordion-body {
-    padding-right: 30px;
-  }
 }
 
 .featured-portfolio-items-info {

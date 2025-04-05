@@ -1,11 +1,5 @@
 /*-----------------------------------------------------------------
 
-Template Name:Wedding Planner HTML5 Template<
-Author:  pixel-drop
-Author URI: https://themeforest.net/user/pixel-drop/portfolio
-Version: 1.0.0
-Description: Wedding Planner HTML5 Template<
-
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS
 -------------------------------------------------------------------
@@ -383,37 +377,6 @@ CSS TABLE OF CONTENTS
             });
         }
 
-
-        //>> Brand Slider Start <<//
-        const brandSlider = new Swiper(".brand-slider", {
-            spaceBetween: 30,
-            speed: 1300,
-            loop: true,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-
-            breakpoints: {
-                1199: {
-                    slidesPerView: 5,
-                },
-                991: {
-                    slidesPerView: 4,
-                },
-                767: {
-                    slidesPerView: 3,
-                },
-                575: {
-                    slidesPerView: 2,
-                },
-                0: {
-                    slidesPerView: 1,
-                },
-            },
-        });
-
         //>> wedding-design Slider Start <<//
         const designSlider = new Swiper(".wedding-design", {
             spaceBetween: 50,
@@ -444,35 +407,6 @@ CSS TABLE OF CONTENTS
                     slidesPerView: 1,
                 },
             },
-        });
-        //>> Search Popup Start <<//
-        const $searchWrap = $(".search-wrap");
-        const $navSearch = $(".nav-search");
-        const $searchClose = $("#search-close");
-
-        $(".search-trigger").on("click", function (e) {
-            e.preventDefault();
-            $searchWrap.animate({ opacity: "toggle" }, 500);
-            $navSearch.add($searchClose).addClass("open");
-        });
-
-        $(".search-close").on("click", function (e) {
-            e.preventDefault();
-            $searchWrap.animate({ opacity: "toggle" }, 500);
-            $navSearch.add($searchClose).removeClass("open");
-        });
-
-        function closeSearch() {
-            $searchWrap.fadeOut(200);
-            $navSearch.add($searchClose).removeClass("open");
-        }
-
-        $(document.body).on("click", function (e) {
-            closeSearch();
-        });
-
-        $(".search-trigger, .main-search-input").on("click", function (e) {
-            e.stopPropagation();
         });
 
         //>> Scroll Js Start <<//
@@ -512,39 +446,6 @@ CSS TABLE OF CONTENTS
             return false;
         });
         // Back to top area end here 
-        
-        //>> Mouse Cursor Start <<//
-        function mousecursor() {
-            if ($("body")) {
-                const e = document.querySelector(".cursor-inner"),
-                    t = document.querySelector(".cursor-outer");
-                let n,
-                    i = 0,
-                    o = !1;
-                (window.onmousemove = function (s) {
-                    o ||
-                        (t.style.transform =
-                            "translate(" + s.clientX + "px, " + s.clientY + "px)"),
-                        (e.style.transform =
-                            "translate(" + s.clientX + "px, " + s.clientY + "px)"),
-                        (n = s.clientY),
-                        (i = s.clientX);
-                }),
-                    $("body").on("mouseenter", "a, .cursor-pointer", function () {
-                        e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
-                    }),
-                    $("body").on("mouseleave", "a, .cursor-pointer", function () {
-                        ($(this).is("a") && $(this).closest(".cursor-pointer").length) ||
-                            (e.classList.remove("cursor-hover"),
-                                t.classList.remove("cursor-hover"));
-                    }),
-                    (e.style.visibility = "visible"),
-                    (t.style.visibility = "visible");
-            }
-        }
-        $(function () {
-            mousecursor();
-        });
 
 
     }); // End Document Ready Function

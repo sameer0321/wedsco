@@ -140,9 +140,6 @@
             </div>
         </div>
     </div>
-    <!--<< Mouse Cursor Start >>-->
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
     <!-- Offcanvas Area Start -->
     <div class="fix-area">
         <div class="offcanvas__info">
@@ -255,6 +252,7 @@
                                             services
                                         </a>
                                     </li>
+                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="contact.html">contact</a></li>
                                 </ul>
                             </nav>
@@ -312,7 +310,7 @@
                             <i class="fa-light fa-champagne-glasses"></i>
                         </div>
                         <div class="content">
-                            <h4><a href="service-details.html">Weekday Occasions</a></h4>
+                            <h4><a href="service.html">Weekday Occasions</a></h4>
                             <ul class="text-start d-inline-block">
                                 <li>7-hour rental window</li>
                                 <li>20 round tables</li>
@@ -337,7 +335,7 @@
                             <i class="fa-light fa-ring"></i>
                         </div>
                         <div class="content">
-                            <h4><a href="service-details.html">Weekend Occasions</a></h4>
+                            <h4><a href="service.html">Weekend Occasions</a></h4>
                             <ul class="text-start d-inline-block">
                                 <li>7-hour rental window</li>
                                 <li>20 round tables</li>
@@ -362,7 +360,7 @@
                             <i class="fa-light fa-crown"></i>
                         </div>
                         <div class="content">
-                            <h4><a href="service-details.html">Occasions + Plus</a></h4>
+                            <h4><a href="service.html">Occasions + Plus</a></h4>
                             <ul class="text-start d-inline-block">
                                 <li>12-hour rental window</li>
                                 <li>All inclusions from Weekend Occasions</li>
@@ -383,7 +381,7 @@
                             <i class="fa-light fa-users"></i>
                         </div>
                         <div class="content">
-                            <h4><a href="service-details.html">Corporate Conferences</a></h4>
+                            <h4><a href="service.html">Corporate Conferences</a></h4>
                             <ul class="text-start d-inline-block">
                                 <li>Customized rental window</li>
                                 <li>20 round tables</li>
@@ -406,7 +404,7 @@
                             <i class="fa-light fa-glass-cheers"></i>
                         </div>
                         <div class="content">
-                            <h4><a href="service-details.html">Corporate Parties</a></h4>
+                            <h4><a href="service.html">Corporate Parties</a></h4>
                             <ul class="text-start d-inline-block">
                                 <li>Customized rental window</li>
                                 <li>20 round tables</li>
@@ -546,51 +544,65 @@
                     <button class="icon-next"><i class="fa-solid fa-heart"></i></button>
                 </div>
             </div>
+
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-11 col-md-10">
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-lg-10 col-md-10">
-                            <div class="contact-form-items">
+
+                            <!-- Important: give your form an ID -->
+                            <form class="contact-form-items">
                                 <div class="row g-4">
                                     <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
                                         <div class="form-clt mb-5">
-                                            <input type="text" name="name" id="name" placeholder="Name">
+                                            <input type="text" name="name" id="name" placeholder="Name" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 wow fadeInUp mb-5" data-wow-delay=".5s">
                                         <div class="form-clt">
-                                            <input type="text" name="email" id="email" placeholder="Email">
+                                            <input type="email" name="email" id="email" placeholder="Email" required>
                                         </div>
                                     </div>
-                                    <div class=" col-xl-6 wow fadeInUp mb-5" data-wow-delay=".7s">
+                                    <div class="col-xl-6 wow fadeInUp mb-5" data-wow-delay=".7s">
                                         <div class="form-clt">
-                                            <input type="text" name="phone" id="phone" placeholder="Phone number">
+                                            <input type="text" name="phone" id="phone" placeholder="Phone number"
+                                                required>
                                         </div>
                                     </div>
-                                    <div class=" col-xl-6 wow fadeInUp mb-4" data-wow-delay=".9s">
+                                    <div class="col-xl-6 wow fadeInUp mb-4" data-wow-delay=".9s">
                                         <div class="form-clt">
-                                            <input type="text" name="name" id="address" placeholder="Address">
+                                            <input type="text" name="address" id="address" placeholder="Address"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-xl-12 wow fadeInUp" data-wow-delay=".3s">
                                         <div class="form-clt">
-                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" placeholder="Message"
+                                                required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-xl-12 wow fadeInUp" data-wow-delay=".5s">
                                         <div class="button-items">
-                                            <button type="submit" class="theme-btn-3 padding-style">Submit
-                                                Now</button>
+                                            <button class="theme-btn-3 padding-style">Submit Now</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Here the message will appear -->
+                                    <div class="col-xl-12">
+                                        <div id="formMessage" style="display:none; margin-top:15px; font-weight:bold;">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!-- Contact Info Section End -->
 
     <!-- Footer Section Start -->
@@ -810,6 +822,8 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 

@@ -26,6 +26,33 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 3rem;
+            color: #a08452;
+            /* Gold tone */
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-container {
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -160,6 +187,7 @@
         </div>
     </div>
     <div class="offcanvas__overlay"></div>
+
     <!-- Header Area Start -->
     <header id="header-sticky" class="header-1 bg-black">
         <div class="container-fluid">
@@ -191,7 +219,6 @@
                                             services
                                         </a>
                                     </li>
-                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="contact.html">contact</a></li>
                                 </ul>
                             </nav>
@@ -213,461 +240,194 @@
     </header>
     <!-- Header Area End -->
 
-
-    <!-- Hero Section Start -->
-    <section class="hero-section-2 hero-2">
-        <div class="swiper hero-slider-2">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-img-1.jpg');">
-                    </div>
-                    <div class="container">
-                        <div class="row g-4 align-items-center justify-content-between">
-                            <div class="col-xl-12">
-                                <div class="hero-content">
-                                    <h1 class="text-center" data-animation="fadeInUp" data-delay="1.3s">
-                                        Timeless Elegance
-                                    </h1>
-                                    <h2 class="text-center" data-animation="fadeInUp" data-delay="1.5s">
-                                        <span>SHERGILL LEGACY HALL</span>
-                                    </h2>
-                                    <h5 class="text-center" data-animation="fadeInUp" data-delay="1.7s">
-                                        Crafting moments that live forever in royal grandeur.
-                                    </h5>
-                                    <div class="hero-button d-flex justify-content-center">
-                                        <a href="#" data-animation="fadeInUp" data-delay="1.9s" class="theme-btn-2">
-                                            Reserve Your Date <i class="fa-light fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-img-2.jpg');">
-                    </div>
-                    <div class="container">
-                        <div class="row g-4 align-items-center justify-content-between">
-                            <div class="col-xl-12">
-                                <div class="hero-content">
-                                    <h1 class="text-center" data-animation="fadeInUp" data-delay="1.3s">
-                                        Timeless Elegance
-                                    </h1>
-                                    <h2 class="text-center" data-animation="fadeInUp" data-delay="1.5s">
-                                        <span>SHERGILL LEGACY HALL</span>
-                                    </h2>
-                                    <h5 class="text-center" data-animation="fadeInUp" data-delay="1.7s">
-                                        Crafting moments that live forever in royal grandeur.
-                                    </h5>
-                                    <div class="hero-button d-flex justify-content-center">
-                                        <a href="#" data-animation="fadeInUp" data-delay="1.9s" class="theme-btn-2">
-                                            Reserve Your Date <i class="fa-light fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-img-3.jpg');">
-                    </div>
-                    <div class="container">
-                        <div class="row g-4 align-items-center justify-content-between">
-                            <div class="col-xl-12">
-                                <div class="hero-content">
-                                    <h1 class="text-center" data-animation="fadeInUp" data-delay="1.3s">
-                                        Timeless Elegance
-                                    </h1>
-                                    <h2 class="text-center" data-animation="fadeInUp" data-delay="1.5s">
-                                        <span>SHERGILL LEGACY HALL</span>
-                                    </h2>
-                                    <h5 class="text-center" data-animation="fadeInUp" data-delay="1.7s">
-                                        Crafting moments that live forever in royal grandeur.
-                                    </h5>
-                                    <div class="hero-button d-flex justify-content-center">
-                                        <a href="#" data-animation="fadeInUp" data-delay="1.9s" class="theme-btn-2">
-                                            Reserve Your Date <i class="fa-light fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
-
-    <!-- Service Section Start -->
-    <section class="service-section-2 fix section-padding">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/gallary-images/img-7.jpg');">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="service-box-items text-center mt-3">
-                        <div class="icon">
-                            <i class="fa-sharp fa-light fa-location-dot"></i>
-                        </div>
-                        <div class="content">
-                            <h4>
-                                <a href="#">
-                                    Address
-                                </a>
-                            </h4>
-                            <p>
-                                13751 Wadsworth Park Drive Suite # 102<br>Draper, UT 84020
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="service-box-items text-center mt-3 active">
-                        <div class="icon">
-                            <i class="fa-light fa-phone"></i>
-                        </div>
-                        <div class="content">
-                            <h4>
-                                <a href="#">
-                                    Contact
-                                </a>
-                            </h4>
-                            <p>801-831-3371</p>
-                            <p>ShergillLegacyHall@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="service-box-items mt-3 text-center">
-                        <div class="icon">
-                            <i class="fa-light fa-clock"></i>
-                        </div>
-                        <div class="content">
-                            <h4>
-                                <a href="#">
-                                    Opening Hours
-                                </a>
-                            </h4>
-                            <p>
-                                Sun-Sat: 9:00am - 10:00pm
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="page-heading text-center">
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">FAQ</h1>
+                <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-slash-forward"></i>
+                    </li>
+                    <li>
+                        FAQ
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Service Section End -->
-
-    <!-- Wedding Photography Section Start -->
-    <section class="wedding-photography-section fix bg-cover"
-        style="background-image: url('assets/img/Photographer/bg-2.jpg');">
+    <section class="faq-section fix section-padding">
         <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp" data-wow-delay=".2s">CAPTURING ETERNAL MOMENTS</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Let Your Love Story Unfold Through Our Lens</h2>
-            </div>
-            <div class="video-box text-center">
-                <span>Watch Our Featured Wedding</span>
-                <a href="#" class="video-btn ripple video-popup">
-                    <i class="fa-solid fa-play"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wedding Photography Section End -->
-
-    <!-- Featured Gallery Section Start -->
-    <section class="featured-gallery-section fix section-padding ">
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp" data-wow-delay=".2s">EXQUISITE MEMORIES</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Creative Masterpieces</h2>
-                <p class="wow fadeInUp mt-2 text-color" data-wow-delay=".3s">Each image tells a story, beautifully
-                    captured for eternity.</p>
-            </div>
-            <div class="featured-portfolio-items-info">
-                <div class="swiper featured-portfolio-img">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="portfolio-image">
-                                <img src="assets/img/gallery/portfolio/01.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio-image">
-                                <img src="assets/img/gallery/portfolio/02.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio-image">
-                                <img src="assets/img/gallery/portfolio/03.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio-image">
-                                <img src="assets/img/gallery/portfolio/04.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="portfolio-image">
-                                <img src="assets/img/gallery/portfolio/05.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- Additional swiper slides go here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Gallery Section End -->
-
-
-
-    <!-- Recent wedding Section Start -->
-    <section class="recent-wedding-section fix section-padding">
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp" data-wow-delay=".2s">PRECIOUS MOMENTS</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Recent Weddings</h2>
-                <p class="wow fadeInUp mt-2 text-color" data-wow-delay=".3s">Captured with love, crafted for a lifetime
-                    of cherished memories.</p>
-            </div>
-        </div>
-        <div class="gallery-wrapper">
-            <div class="swiper image-gallery-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="row g-5 justify-content-between">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                                <div class="gallery-image justify-content-between">
-                                    <img src="assets/img/wedding-design/wedding-gallery/01.jpg" alt="img">
-                                    <div class="gallery-content text-center">
-                                        <h3>Shergill Legacy Hall</h3>
-                                        <h6> Celebrations</h6>
-                                        <div class="img-design">
-                                            <img src="assets/img/wedding-design/wedding-gallery/01.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row g-5 justify-content-between">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                                <div class="gallery-image justify-content-between">
-                                    <img src="assets/img/wedding-design/wedding-gallery/02.jpg" alt="img">
-                                    <div class="gallery-content text-center">
-                                        <h3>Shergill Legacy Hall</h3>
-                                        <h6> Celebrations</h6>
-                                        <div class="img-design">
-                                            <img src="assets/img/wedding-design/wedding-gallery/01.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row g-5 justify-content-between">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                                <div class="gallery-image justify-content-between">
-                                    <img src="assets/img/wedding-design/wedding-gallery/03.jpg" alt="img">
-                                    <div class="gallery-content text-center">
-                                        <h3>Shergill Legacy Hall</h3>
-                                        <h6> Celebrations</h6>
-                                        <div class="img-design">
-                                            <img src="assets/img/wedding-design/wedding-gallery/01.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row g-5 justify-content-between">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                                <div class="gallery-image justify-content-between">
-                                    <img src="assets/img/wedding-design/wedding-gallery/04.jpg" alt="img">
-                                    <div class="gallery-content text-center">
-                                        <h3>Shergill Legacy Hall</h3>
-                                        <h6> Celebrations</h6>
-                                        <div class="img-design">
-                                            <img src="assets/img/wedding-design/wedding-gallery/01.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row g-5 justify-content-between">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                                <div class="gallery-image justify-content-between">
-                                    <img src="assets/img/wedding-design/wedding-gallery/05.jpg" alt="img">
-                                    <div class="gallery-content text-center">
-                                        <h3>Shergill Legacy Hall</h3>
-                                        <h6> Celebrations</h6>
-                                        <div class="img-design">
-                                            <img src="assets/img/wedding-design/wedding-gallery/01.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row g-5 justify-content-between">
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                                <div class="gallery-image justify-content-between">
-                                    <img src="assets/img/wedding-design/wedding-gallery/06.jpg" alt="img">
-                                    <div class="gallery-content text-center">
-                                        <h3>Shergill Legacy Hall</h3>
-                                        <h6> Celebrations</h6>
-                                        <div class="img-design">
-                                            <img src="assets/img/wedding-design/wedding-gallery/01.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Recent wedding Section End -->
-
-    <!--Pricing Plans Section Start -->
-    <section class="pricing-plans-section fix section-padding">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-6 col-lg-8 col-md-9">
-                    <div class="pricing-wrapper">
-                        <div class="section-title">
-                            <span class="wow fadeInUp" data-wow-delay=".2s">Pricing Plans</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".3s">Shergill Legacy Hall Pricing</h2>
-                            <p class="mt-4 wow fadeInUp" data-wow-delay=".5s">
-                                Check out our flexible pricing options for day and evening events. We offer tailored
-                                pricing based on the day of the week and time of day to fit your needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-8 col-md-9">
-                    <!-- Day Pricing -->
-                    <div class="pricing-items wow fadeInUp" data-wow-delay=".2s">
-                        <div class="pricing-header">
-                            <h5>Day Pricing (9 AM - 2 PM)</h5>
-                        </div>
-                        <div class="pricing-items-info">
-                            <ul class="pricing-list mt-4">
-                                <li>
-                                    <span>Monday - Thursday: </span>
-                                    <span>$ 2,150</span>
-                                </li>
-                                <li>
-                                    <span>Friday & Sunday: </span>
-                                    <span>$ 2,750</span>
-                                </li>
-                                <li>
-                                    <span>Saturday: </span>
-                                    <span>$ 3,250</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Evening Pricing -->
-                    <div class="pricing-items wow fadeInUp" data-wow-delay=".3s">
-                        <div class="pricing-header">
-                            <h5>Evening Pricing (4 PM - 10 PM)</h5>
-                        </div>
-                        <div class="pricing-items-info">
-                            <ul class="pricing-list mt-4">
-                                <li>
-                                    <span>Monday - Thursday: </span>
-                                    <span>$ 2,950</span>
-                                </li>
-                                <li>
-                                    <span>Friday & Sunday: </span>
-                                    <span>$ 3,150</span>
-                                </li>
-                                <li>
-                                    <span>Saturday: </span>
-                                    <span>$ 3,850</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Pricing Plans Section End -->
-
-
-    <!-- Contact Info Section Start -->
-    <section class="contact-info-area fix section-bg-3 section-padding">
-        <div class="container">
-            <div class="contact-wrapper">
+            <div class="faq-wrapper fix bg-cover" style="background-image: url('assets/img/faq.jpg');">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="contact-left-items">
-                            <div class="d-flex justify-content-center justify-content-lg-start contact-image wow fadeInUp"
-                                data-wow-delay=".4s">
-                                <img src="assets/img/contact.png" alt="contact-img">
+                        <div class="tab-content">
+                            <div id="trust1" class="tab-pane fade show active" role="tabpanel">
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordion1">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq1"
+                                                        aria-expanded="true" aria-controls="faq1">
+                                                        <img src="assets/img/dot.png" alt="img"> What services do you
+                                                        offer for event planning?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq1" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion1">
+                                                    <div class="accordion-body">
+                                                        We offer full event planning, design, and coordination services
+                                                        including venue selection, decoration, catering, and
+                                                        entertainment arrangements.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq2"
+                                                        aria-expanded="false" aria-controls="faq2">
+                                                        <img src="assets/img/dot.png" alt="img"> How far in advance
+                                                        should I book your services?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq2" class="accordion-collapse show"
+                                                    data-bs-parent="#accordion1">
+                                                    <div class="accordion-body">
+                                                        It’s best to book at least 3-6 months in advance to ensure
+                                                        availability and smooth planning, especially during peak
+                                                        seasons.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq3"
+                                                        aria-expanded="false" aria-controls="faq3">
+                                                        <img src="assets/img/dot.png" alt="img"> Can you work within my
+                                                        budget?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq3" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion1">
+                                                    <div class="accordion-body">
+                                                        Absolutely! We tailor our services to fit your budget and
+                                                        prioritize delivering a memorable experience without
+                                                        compromising on quality.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq4"
+                                                        aria-expanded="false" aria-controls="faq4">
+                                                        <img src="assets/img/dot.png" alt="img"> Do you handle
+                                                        destination events?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq4" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion1">
+                                                    <div class="accordion-body">
+                                                        Yes, we specialize in planning and managing destination events,
+                                                        ensuring every detail is perfectly executed no matter the
+                                                        location.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="contact-right-items">
-                            <div class="contact-content">
-                                <div class="section-title">
-                                    <span class="text-color wow fadeInUp">LET’S WORK TOGETHERs</span>
-                                    <h2 class="text-blackcolor wow fadeInUp" data-wow-delay=".3s">Write me a message
-                                    </h2>
-                                </div>
-                                <form action="#" id="contact-form" method="POST" class="contact-form-items">
-                                    <div class="row g-4">
-                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
-                                            <div class="form-clt">
-                                                <input type="text" name="name" id="name" placeholder="NAME">
+                        <div class="tab-content">
+                            <div id="trust" class="tab-pane fade show active" role="tabpanel">
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordion">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq5"
+                                                        aria-expanded="false" aria-controls="faq5">
+                                                        <img src="assets/img/dot.png" alt="img"> What types of events do
+                                                        you specialize in?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq5" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We specialize in weddings, corporate events, birthday parties,
+                                                        anniversaries, and themed celebrations of all kinds.
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                            <div class="form-clt">
-                                                <input type="text" name="email" id="email" placeholder="EMAIL">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq6"
+                                                        aria-expanded="true" aria-controls="faq6">
+                                                        <img src="assets/img/dot.png" alt="img"> Do you offer customized
+                                                        packages?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq6" class="accordion-collapse show"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        Yes, we offer fully customized packages tailored to your
+                                                        specific needs, preferences, and event scale.
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                            <div class="form-clt">
-                                                <input type="text" name="phone" id="phone" placeholder="PHONE"
-                                                    class="active">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq7"
+                                                        aria-expanded="false" aria-controls="faq7">
+                                                        <img src="assets/img/dot.png" alt="img"> Will someone be
+                                                        available on the event day?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq7" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        Absolutely! Our team will be present throughout your event to
+                                                        ensure everything runs smoothly and handle any last-minute
+                                                        issues.
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
-                                            <div class="form-clt">
-                                                <textarea name="message" id="message" placeholder="MESSAGE"
-                                                    class="active"></textarea>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq8"
+                                                        aria-expanded="false" aria-controls="faq8">
+                                                        <img src="assets/img/dot.png" alt="img"> How do you manage
+                                                        vendors and logistics?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq8" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We coordinate with all vendors, manage timelines, and oversee
+                                                        setup and execution to ensure a seamless event experience for
+                                                        you and your guests.
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                                            <a class="theme-btn-2" href="contact.html">
-                                                Contact Me
-                                            </a>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -675,85 +435,6 @@
             </div>
         </div>
     </section>
-    <!-- Contact Info Section End -->
-
-    <!-- Wedding Agency Start-->
-    <section class="wedding-agency-section-2 fix section-padding">
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp" data-wow-delay=".3s">FOLLOW US ON</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".5s">Instagram</h2>
-            </div>
-        </div>
-        <div class="instagram-wrapper-2">
-            <div class="swiper instagram-banner-slider-2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/06.jpg" alt="insta-img">
-                                <a href="#" class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/07.jpg" alt="insta-img">
-                                <a href="#" class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/08.jpg" alt="insta-img">
-                                <a href="#" class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/09.jpg" alt="insta-img">
-                                <a href="#" class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/10.jpg" alt="insta-img">
-                                <a href="#" class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="assets/img/instagram/11.jpg" alt="insta-img">
-                                <a href="#" class="video-btn ripple video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Wedding Agency End -->
-
 
     <!-- Footer Section Start -->
     <footer class="footer-section bg-footer">
@@ -939,8 +620,6 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
-
     <!-- Back to top area start here -->
     <div class="scroll-up">
         <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
